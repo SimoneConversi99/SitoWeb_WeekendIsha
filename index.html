@@ -124,8 +124,9 @@
         <li id="hotel3">Baita del noce</li>
         <li id="hotel4">Chalet Dossena</li>
         <li id="hotel5">Chalet Franca</li>
-        <img src="patata.png" class="center-image">
     </ul>
+
+    <img src="patata.png" class="center-image">
 
     <!--Chalet San Valentino-->
     <div id="hotel-info1">
@@ -251,51 +252,61 @@
         document.getElementById('hotel1').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
             document.getElementById('hotel-info1').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'none';
         });
 
         document.getElementById('hotel2').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
             document.getElementById('hotel-info2').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'none';
         });
 
         document.getElementById('hotel3').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
             document.getElementById('hotel-info3').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'none';
         });
 
         document.getElementById('hotel4').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
             document.getElementById('hotel-info4').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'none';
         });
 
         document.getElementById('hotel5').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
             document.getElementById('hotel-info5').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'none';
         });
 
         function goBack1() {
             document.getElementById('hotel-info1').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'block';
         }
 
         function goBack2() {
             document.getElementById('hotel-info2').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'block';
         }
 
         function goBack3() {
             document.getElementById('hotel-info3').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'block';
         }
 
         function goBack4() {
             document.getElementById('hotel-info4').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'block';
         }
 
         function goBack5() {
             document.getElementById('hotel-info5').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
+            document.getElementById('centerImage').style.display = 'block';
         }
     </script>
 </body>
