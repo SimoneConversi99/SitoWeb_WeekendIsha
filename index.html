@@ -24,21 +24,68 @@
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
         }
-        a {
-            text-decoration: none;
+        li:hover {
+            background-color: #eaeaea;
+        }
+        #hotel-info {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #hotel-info img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .back-button {
+            display: block;
+            margin-bottom: 20px;
+            cursor: pointer;
             color: #007BFF;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>Elenco di Hotel</h1>
     <ul>
-        <li><strong>Hotel Bella Vista</strong><br><a href="https://www.hotelbellavista.it">www.hotelbellavista.it</a></li>
-        <li><strong>Grand Hotel Paradiso</strong><br><a href="https://www.grandhotelparadiso.com">www.grandhotelparadiso.com</a></li>
-        <li><strong>Albergo Sole</strong><br><a href="https://www.albergosole.it">www.albergosole.it</a></li>
-        <li><strong>Hotel Luna Rossa</strong><br><a href="https://www.hotellunarossa.it">www.hotellunarossa.it</a></li>
-        <li><strong>Hotel Luna Blu</strong><br><a href="https://www.hotellunablu.it">www.hotellunablu.it</a></li>
+        <li id="hotel1">Hotel Bella Vista</li>
     </ul>
+
+    <div id="hotel-info">
+        <span class="back-button" onclick="goBack()">← Torna indietro</span>
+        <h2>Hotel Bella Vista</h2>
+        <img src="https://via.placeholder.com/400x300" alt="Foto Hotel Bella Vista">
+        <h3>Luogo:</h3>
+        <p>Via delle Colline, 10, Firenze</p>
+        <h3>Servizi:</h3>
+        <ul>
+            <li>Wi-Fi gratuito</li>
+            <li>Piscina</li>
+            <li>Centro benessere</li>
+            <li>Colazione inclusa</li>
+        </ul>
+        <h3>Recensioni:</h3>
+        <p>Valutazione media: ★★★★☆ (4.5/5)</p>
+        <p>"Splendido soggiorno, vista mozzafiato e servizio eccellente!" - Mario Rossi</p>
+        <p>"Tutto perfetto, soprattutto la piscina e il centro benessere!" - Laura Bianchi</p>
+    </div>
+
+    <script>
+        document.getElementById('hotel1').addEventListener('click', function() {
+            document.querySelector('ul').style.display = 'none';
+            document.getElementById('hotel-info').style.display = 'block';
+        });
+
+        function goBack() {
+            document.getElementById('hotel-info').style.display = 'none';
+            document.querySelector('ul').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
