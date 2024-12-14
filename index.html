@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le mie proposte <3</title>
+    <title>Le mie proposte</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -107,10 +107,17 @@
             color: #007BFF;
             text-decoration: underline;
         }
+
+        .center-image {
+            display: block;
+            margin: 20px auto; /* Auto imposta i margini laterali uguali e lo centra */
+            max-width: 100%; /* L'immagine non supererà la larghezza del contenitore */
+            height: auto; /* Mantiene le proporzioni dell'immagine */
+        }
     </style>
 </head>
 <body>
-    <h1>Le mie proposte <3</h1>
+    <h1>Le mie proposte</h1>
     <ul>
         <li id="hotel1">Chalet San Valentino</li>
         <li id="hotel2">Chalet Alma</li>
@@ -118,6 +125,8 @@
         <li id="hotel4">Chalet Dossena</li>
         <li id="hotel5">Chalet Franca</li>
     </ul>
+
+    <img src="patata.png" class="center-image">
 
     <!--Chalet San Valentino-->
     <div id="hotel-info1">
