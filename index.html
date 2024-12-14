@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elenco di Hotel</title>
+    <title>Le mie proposte <3</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +28,29 @@
         }
         li:hover {
             background-color: #eaeaea;
+
+        lipro {
+            background-color: #32a87b;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        lipro :hover {
+            background-color: #eaeaea;
+
+        licontro {
+            background-color: #a8324e;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        licontro :hover {
+            background-color: #eaeaea;
+            
         }
         #hotel-info {
             display: none;
@@ -52,24 +75,36 @@
     </style>
 </head>
 <body>
-    <h1>Elenco di Hotel</h1>
+    <h1>Le mie proposte <3</h1>
     <ul>
-        <li id="hotel1">Hotel Bella Vista</li>
+        <li id="hotel1">Chalet San Valentino</li>
     </ul>
 
     <div id="hotel-info">
         <span class="back-button" onclick="goBack()">← Torna indietro</span>
-        <h2>Hotel Bella Vista</h2>
+        <h2>Chalet San Valentino</h2>
         <img src="Chalet San Valentino img 1.jpg" alt="Foto Hotel Bella Vista">
+        
         <h3>Luogo:</h3>
-        <p>Via delle Colline, 10, Firenze</p>
-        <h3>Servizi:</h3>
+        <p>San Valentino 16, 39040 Salorno, Italia</p>
+        <a href="https://www.google.it/maps/place/Chalet+San+Valentino/@46.2319559,11.217688,17z/data=!3m1!4b1!4m6!3m5!1s0x47827f22814f6c31:0xd1aaa780ad279d6f!8m2!3d46.2319522!4d11.2202629!16s%2Fg%2F11pgzsg9hk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Maps</a>
+       
+        <h3>Superficie:</h3>
+        <p>60 m2</p>
+        
+        <h3>Pro:</h3>
         <ul>
-            <li>Wi-Fi gratuito</li>
-            <li>Piscina</li>
-            <li>Centro benessere</li>
-            <li>Colazione inclusa</li>
+            <lipro>Casa grande</lipro>
+            <lipro>WiFi gratuito</lipro>
+            <lipro>Vista molto bella</lipro>
+            <lipro>Casa isolata</lipro>
         </ul>
+        
+        <h3>Contro:</h3>
+        <ul>
+            <licontro>Bagno piccolo</licontro>
+        </ul>
+        
         <h3>Recensioni:</h3>
         <p>Valutazione media: ★★★★☆ (4.5/5)</p>
         <p>"Splendido soggiorno, vista mozzafiato e servizio eccellente!" - Mario Rossi</p>
