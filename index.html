@@ -29,7 +29,8 @@
         li:hover {
             background-color: #eaeaea;
         }
-        #hotel-info {
+
+        #hotel-info1 {
             display: none;
             padding: 20px;
             background-color: #fff;
@@ -37,11 +38,26 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        #hotel-info img {
+        #hotel-info1 img {
             width: 100%;
             height: auto;
             border-radius: 5px;
         }
+
+        #hotel-info2 {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #hotel-info2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
         .back-button {
             display: block;
             margin-bottom: 20px;
@@ -55,22 +71,51 @@
     <h1>Le mie proposte <3</h1>
     <ul>
         <li id="hotel1">Chalet San Valentino</li>
+        <li id="hotel2">Chalet Alma</li>
+        <li id="hotel3">Baita del noce</li>
+        <li id="hotel4">Chalet Dossena</li>
+        <li id="hotel5">Chalet Franca</li>
     </ul>
 
-    <div id="hotel-info">
-        <span class="back-button" onclick="goBack()">← Torna indietro</span>
+    <div id="hotel-info1">
+        <span class="back-button" onclick="goBack1()">← Torna indietro</span>
         <h2>Chalet San Valentino</h2>
-        <img src="Chalet San Valentino img 1.jpg" alt="Foto Hotel Bella Vista">
+        <img src="Chalet San Valentino img 1.jpg" alt="Foto Chalet San Valentino">
         <h3>Luogo:</h3>
-        <p>San Valentino 16, 39040 Salorno, Italia</p>
         <a href="https://www.google.it/maps/place/Chalet+San+Valentino/@46.2319559,11.217688,17z/data=!3m1!4b1!4m6!3m5!1s0x47827f22814f6c31:0xd1aaa780ad279d6f!8m2!3d46.2319522!4d11.2202629!16s%2Fg%2F11pgzsg9hk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Google Maps</a>
         <p>Circa 2 ore e 30 di macchina</p>
-        <h3>Servizi:</h3>
+        <h3>Pro:</h3>
         <ul>
             <li>Wi-Fi gratuito</li>
-            <li>Piscina</li>
-            <li>Centro benessere</li>
-            <li>Colazione inclusa</li>
+            <li>Casa grande abbastanza isolata</li>
+            <li>Vista molto bella</li>
+        </ul>
+        <h3>Contro:</h3>
+        <ul>
+            <li>Bagno piccolo</li>
+        </ul>
+        <h3>Recensioni:</h3>
+        <p>Valutazione media: ★★★★☆ (4.5/5)</p>
+        <p>"Splendido soggiorno, vista mozzafiato e servizio eccellente!" - Mario Rossi</p>
+        <p>"Tutto perfetto, soprattutto la piscina e il centro benessere!" - Laura Bianchi</p>
+    </div>
+
+    <div id="hotel-info2">
+        <span class="back-button" onclick="goBack2()">← Torna indietro</span>
+        <h2>Chalet Alma</h2>
+        <img src="Chalet Alma img 1.jpg" alt="Foto Chalet Alma">
+        <h3>Luogo:</h3>
+        <a href="https://www.google.it/maps/place/44%C2%B019'56.5%22N+7%C2%B047'48.3%22E/@44.3323606,7.7957089,18z/data=!3m1!4b1!4m4!3m3!8m2!3d44.332359!4d7.796761?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">Google Maps</a>
+        <p>Circa 3 ore e 10 di macchina</p>
+        <h3>Pro:</h3>
+        <ul>
+            <li>Wi-Fi gratuito</li>
+            <li>Casa grande abbastanza isolata</li>
+            <li>Vista molto bella</li>
+        </ul>
+        <h3>Contro:</h3>
+        <ul>
+            <li>Bagno piccolo</li>
         </ul>
         <h3>Recensioni:</h3>
         <p>Valutazione media: ★★★★☆ (4.5/5)</p>
@@ -81,11 +126,21 @@
     <script>
         document.getElementById('hotel1').addEventListener('click', function() {
             document.querySelector('ul').style.display = 'none';
-            document.getElementById('hotel-info').style.display = 'block';
+            document.getElementById('hotel-info1').style.display = 'block';
         });
 
-        function goBack() {
-            document.getElementById('hotel-info').style.display = 'none';
+        document.getElementById('hotel2').addEventListener('click', function() {
+            document.querySelector('ul').style.display = 'none';
+            document.getElementById('hotel-info2').style.display = 'block';
+        });
+
+        function goBack1() {
+            document.getElementById('hotel-info1').style.display = 'none';
+            document.querySelector('ul').style.display = 'block';
+        }
+
+        function goBack2() {
+            document.getElementById('hotel-info2').style.display = 'none';
             document.querySelector('ul').style.display = 'block';
         }
     </script>
